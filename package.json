@@ -1,0 +1,30 @@
+{
+  "name": "wechat-jssdk-promise",
+  "version": "1.0.0",
+  "description": "wechar jssdk promise wrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xialeistudio/wechat-jssdk-promise.git"
+  },
+  "keywords": [
+    "wechat",
+    "promise",
+    "jssdk"
+  ],
+  "author": "xialeistudio <xialeistudio@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xialeistudio/wechat-jssdk-promise/issues"
+  },
+  "homepage": "https://github.com/xialeistudio/wechat-jssdk-promise#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6"
+  },
+  "devDependencies": {
+    "eslint": "^3.10.2"
+  }
+}
