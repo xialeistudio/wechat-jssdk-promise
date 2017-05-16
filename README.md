@@ -1,14 +1,14 @@
-#微信JSSDK Promise版本
+# 微信JSSDK Promise版本
 微信JSSDK使用回调函数进行异步处理，但是某些接口会存在“回调嵌套”的问题，比如【播放一个服务器的录音文件】，需要：   
 1. wx.downloadVoice   
 2. wx.playVoice   
 本程序对微信JSSDK进行的一层Promise包装，配合ES7的**async/await**可以解决此类问题
 
-##注意   
+## 注意   
 1. 本程序依旧依赖微信JSSDK的js，请提前加载   
 2. 微信原始JSSDK中的方法依旧可以使用  
 
-##异步接口   
+## 异步接口   
 + wx.config => wx.configAsync
 + wx.checkJsApi => wx.checkJsApiAsync
 + wx.onMenuShareTimeline => wx.onMenuShareTimelineAsync
@@ -39,7 +39,7 @@
 + wx.addCard => wx.addCardAsync
 + wx.chooseWXPay => wx.chooseWXPayAsync
 
-##使用方法   
+## 使用方法   
 以 wx.chooseImage 为例   
 ```javascript
 //使用wx.config
@@ -65,8 +65,8 @@ async function config() {
 }
 ```
 
-##授权协议   
+## 授权协议   
 [MIT License](https://mit-license.org/)
 
-##博客   
+## 博客   
 [每天进步一点点](https://www.ddhigh.com)
