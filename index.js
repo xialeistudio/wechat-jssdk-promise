@@ -147,6 +147,22 @@ wx.chooseImageAsync = function (params) {
     wx.chooseImage(params);
   });
 };
+
+/**
+ * 获取本地图片接口（微信新增API）
+ * @param params
+ */
+wx.getLocalImgDataAsync = function (params) {
+  params = params || {};
+  return new Promise(function (resolve, reject) {
+    params.success = resolve;
+    params.fail = function (res) {
+      reject(new Error(res.errMsg));
+    };
+    wx.getLocalImgData(params);
+  });
+};
+
 /**
  * 预览图片接口
  * @param params
